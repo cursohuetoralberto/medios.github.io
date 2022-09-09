@@ -1,0 +1,35 @@
+.a, .b, .c {
+width: 25%;
+height: 100px;
+margin-right:10px;
+margin-bottom:10px;
+font-weight:bolder;
+float:left;
+color: white;
+text-align: center;
+}
+.a {
+    background: black;
+    margin-left: 10%;
+    box-shadow:10px 5px 20px blue; /* Sombra de cajas */ /* <text-shadow> sombra de texto */
+}
+.b {
+    background: green;
+}
+.c {
+    background: blue;
+}
+@media(max-width: 618px)
+{
+    .a, .b, .c {
+        width: 80%;
+        height: 50px;
+        display: block;
+        float: none;
+        margin-left: 10%;
+    }
+}
+p::selection {
+    background-color:red;
+    color:yellow;
+}
